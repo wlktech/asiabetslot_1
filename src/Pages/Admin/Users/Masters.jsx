@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import logo from '../../../assets/img/logo/logo.png';
 import Create from './Masters/Create';
+import { NavLink } from 'react-router-dom';
 
 export default function Masters() {
   let [create, setCreate] = useState(false);
+  const [masters,setMasters]=useState([
+    {id:1,profile:logo,name:"Master",phone:'09123456',role:'Master',startDate:'12-Dec-2024'},
+  ])
   return (
     <>
       <div className="container-fluid py-4">
@@ -50,21 +54,23 @@ export default function Masters() {
                     </tr>
                   </thead>
                   <tbody className='text-center'>
-                    <tr>
-                      <td>1</td>
+                    {masters.map((master)=>{
+                      return <tr>
+                      <td>{master.id}</td>
                       <td>
-                        <img src={logo} width={50} height={50} alt="" />
+                        <img src={master.profile} width={50} height={50} alt="" />
                       </td>
-                      <td>Master</td>
-                      <td>09123456789</td>
-                      <td>Master</td>
-                      <td>12-Dec-2024</td>
+                      <td>{master.name}</td>
+                      <td>{master.phone}</td>
+                      <td>{master.role}</td>
+                      <td>{master.startDate}</td>
                       <td>
-                        <a href="" className="btn btn-success py-2 px-2"><i className="fas fa-pen"></i></a>
-                        <a href="" className="btn btn-warning py-2 px-2 mx-2"><i className="fas fa-eye"></i></a>
+                        <NavLink to={`/admin/masters/${master.id}/edit`} className="btn btn-success py-2 px-2"><i className="fas fa-pen"></i></NavLink>
+                        <NavLink to={`/admin/masters/${master.id}`} className="btn btn-warning py-2 px-2 mx-2"><i className="fas fa-eye"></i></NavLink>
                         <a href="" className="btn btn-danger py-2 px-2"><i className="fas fa-trash"></i></a>
                       </td>
                     </tr>
+                    })}
                   </tbody>
                 </table>
               </div>
