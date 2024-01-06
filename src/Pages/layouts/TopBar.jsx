@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom'
 export default function TopBar({isSidebarOpen,setIsSidebarOpen}) {
   return (
     <>
-       <nav
-    className="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky"
+       <nav 
+    className=" z-3 shadow-blur bg-white shadow-lg navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky"
     id="navbarBlur"
     data-scroll="true"
+    style={{height:'max-content'}}
 >
     <div className="container-fluid py-1 px-3">
     {!isSidebarOpen && <nav  aria-label="breadcrumb">
@@ -40,29 +41,29 @@ export default function TopBar({isSidebarOpen,setIsSidebarOpen}) {
                 </g>
             </svg>
             </a>
-        </li>
+        </li> /
         <li className="breadcrumb-item text-sm">
             <a className="opacity-5 text-dark" href="javascript:;">
             Pages
-            </a>
-        </li>
+            </a> 
+        </li> /
         <li
             className="breadcrumb-item text-sm text-dark active"
             aria-current="page"
         >
-            index
+            index /
         </li>
         </ol>
         <h6 className="font-weight-bolder mb-0">index</h6>
     </nav>}
-    <div onClick={()=>setIsSidebarOpen(!isSidebarOpen)} className="d-none d-xl-block">
+    {/* <div onClick={()=>setIsSidebarOpen(!isSidebarOpen)} >
         
         <div className="sidenav-toggler-inner">
             <i className="sidenav-toggler-line" />
             <i className="sidenav-toggler-line" />
             <i className="sidenav-toggler-line" />
         </div>
-    </div>
+    </div> */}
     <div
         className="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4"
         id="navbar"
@@ -82,13 +83,13 @@ export default function TopBar({isSidebarOpen,setIsSidebarOpen}) {
             <i className="material-icons me-sm-1">account_circle</i>
             </Link>
         </li>
-        <li   className="nav-item d-xl-none ps-3 d-flex align-items-center">
+        <li   className="nav-item me-4 ps-3 d-flex align-items-center">
             <a
             href="javascript:;"
             className="nav-link text-body p-0"
             id="iconNavbarSidenav"
             >
-            <div  onClick={()=>setIsSidebarOpen(!isSidebarOpen)} className="d-inline d-xl-none">
+            <div  onClick={()=>setIsSidebarOpen(!isSidebarOpen)}>
         
         <div className="sidenav-toggler-inner">
             <i className="sidenav-toggler-line" />

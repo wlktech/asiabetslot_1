@@ -8,6 +8,9 @@ export default function Sidebar({isSidebarOpen,setIsSidebarOpen}) {
     <>
    <div className="wrapper">
    <aside className={isSidebarOpen ? 'expand' : ''} id="sidebar">
+            <div onClick={()=>setIsSidebarOpen(false)}  className={`${isSidebarOpen ? 'd-block d-md-none ' : 'd-none'} cursor-pointer text-end px-4 `}>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
            <NavLink to={'/'}>
             <div className='nav-header' >
                 <img src={logo} className='logo' />
@@ -37,7 +40,7 @@ export default function Sidebar({isSidebarOpen,setIsSidebarOpen}) {
                     to={'/profile'}
                     >
                         <img className='profile' src={profile} />
-                        <span className="sidenav-normal  ms-2  ps-1"> Profile </span>
+                        <span className="sidenav-normal    ps-1"> Profile </span>
                     </NavLink>
                    
                     </a>
