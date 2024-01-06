@@ -11,7 +11,8 @@ export default function Footer() {
                             ©Copyright 2024 by 
                             <a
                                 href="https://delightmyanmar.pro/"
-                                className="font-weight-bold ms-2"
+                                className="font-weight-bold text-dark" 
+                                 
                                 target="_blank"
                             >
                                 Delight Myanmar

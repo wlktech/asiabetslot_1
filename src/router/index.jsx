@@ -9,6 +9,8 @@ import Agents from "../Pages/Admin/Users/Agents";
 import Users from "../Pages/Admin/Users/Users";
 import Login from "../Pages/Auth/Login";
 import Register from "../Pages/Auth/Register";
+import MasterEditPage from "../Pages/Admin/Users/Masters/Edit";
+import MasterViewPage from "../Pages/Admin/Users/Masters/View";
 
 
 const router = createBrowserRouter([
@@ -27,7 +29,15 @@ const router = createBrowserRouter([
         {
           path : "/admin/masters",
           element : <Masters />
-        },        
+        },   
+        {
+          path : "/admin/masters/:masterId/edit",
+          element : <MasterEditPage />
+        },
+        {
+          path : "/admin/masters/:masterId",
+          element : <MasterViewPage />
+        },      
         {
           path : "/admin/agents",
           element : <Agents />
