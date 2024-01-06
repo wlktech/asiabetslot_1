@@ -11,7 +11,7 @@ export default function TopBar({isSidebarOpen,setIsSidebarOpen}) {
     style={{height:'max-content'}}
 >
     <div className="container-fluid py-1 px-3">
-    {!isSidebarOpen && <nav  aria-label="breadcrumb">
+     <nav  aria-label="breadcrumb">
         <ol className="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
         <li className="breadcrumb-item text-sm">
             <a className="opacity-3 text-dark" href="javascript:;">
@@ -46,7 +46,7 @@ export default function TopBar({isSidebarOpen,setIsSidebarOpen}) {
             <a className="opacity-5 text-dark" href="javascript:;">
             Pages
             </a> 
-        </li> /
+        </li>
         <li
             className="breadcrumb-item text-sm text-dark active"
             aria-current="page"
@@ -55,7 +55,7 @@ export default function TopBar({isSidebarOpen,setIsSidebarOpen}) {
         </li>
         </ol>
         <h6 className="font-weight-bolder mb-0">index</h6>
-    </nav>}
+    </nav>
     {/* <div onClick={()=>setIsSidebarOpen(!isSidebarOpen)} >
         
         <div className="sidenav-toggler-inner">

@@ -44,10 +44,7 @@ body {
 
     z-index: 1000;
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 10px !important;
+    
     height: 96vh !important;
     margin: 10px;
     background-color: #404048;
@@ -73,11 +70,11 @@ body {
     z-index: 1000;
     transition: all .25s ease-in-out;
     color: #FFF !important;
-    display: flex;
-    flex-direction: column;
+   
     height: 100vh !important;
     min-height: 100vh !important;
 }
+
  .profile{
     width: 30px;
     height: 30px;
@@ -196,4 +193,21 @@ a.sidebar-link:hover {
     transition: all .2s ease-out;
     color: #FFF !important;
 
+}
+
+#sidebar2{
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 96vh;
+    background: #404048;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    color: #FFF !important;
+    border-radius:10px;
+    margin: 10px;
+    min-width: 240px;
 }
