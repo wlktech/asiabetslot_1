@@ -11,6 +11,7 @@ import Login from "../Pages/Auth/Login";
 import Register from "../Pages/Auth/Register";
 import MasterEditPage from "../Pages/Admin/Users/Masters/Edit";
 import MasterViewPage from "../Pages/Admin/Users/Masters/View";
+import Home from "../Pages/User/Home";
 
 
 const router = createBrowserRouter([
@@ -64,6 +65,9 @@ const router = createBrowserRouter([
       path : "/register",
       element : <Register />
     },
+    {path:'/home',
+    element: <Home/> 
+  }
 ]);
 
 

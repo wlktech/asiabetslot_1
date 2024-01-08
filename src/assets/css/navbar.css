@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 100px;
+    width: auto;
+}
+.loginBtn{
+    padding: 6px 20px;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
+    background: #287568;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; 
+    border: none;
+}
+.loginBtn:hover{
+    box-shadow: 0 14px 18px rgba(255, 252, 252, 0.1);
+}
