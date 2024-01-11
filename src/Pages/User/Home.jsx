@@ -2,7 +2,7 @@ import React from 'react'
 import '../../assets/css/user/home.css';
 
 import HomeFooter from '../../components/User/HomeFooter';
-import Hero from '../../components/User/Hero';
+import Hero from '../../components/User/hero';
 
 export default function Home() {
   return (
