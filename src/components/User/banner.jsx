@@ -27,7 +27,7 @@ const Banner = () => {
     modules={[Autoplay,Pagination]}
   >
     {banners.map((banner)=>{
-      return <SwiperSlide className=''>
+      return <SwiperSlide key={banner} >
         <img  className='bannerImg  rounded-4' src={banner} alt={banner} />
       </SwiperSlide>
     })}

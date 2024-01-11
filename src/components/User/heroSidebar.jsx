@@ -10,10 +10,10 @@ const HeroSideBar = () => {
     <div className='d-none d-lg-flex flex-column heroSidebar shadow'>
      {
         sidebar.map((item)=>{
-            return <>
+            return <div key={item.title}>
                 {item.icon}
                 <p >{item.title}</p>
-            </>
+            </div>
         })
      }
     </div>
