@@ -3,6 +3,7 @@ import Navbar from './navbar'
 import Banner from './banner'
 import HeroSideBar from './heroSidebar'
 
+
 const Hero = () => {
   return (
     <div className='hero'>
