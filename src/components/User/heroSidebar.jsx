@@ -12,7 +12,7 @@ const HeroSideBar = () => {
         sidebar.map((item)=>{
             return <>
                 {item.icon}
-                <p className='text-xs'>{item.title}</p>
+                <p >{item.title}</p>
             </>
         })
      }
