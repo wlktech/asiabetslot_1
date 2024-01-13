@@ -5,13 +5,18 @@ import HomeFooter from '../../components/User/HomeFooter';
 import Hero from '../../components/User/hero';
 import CategoriesAndWinner from '../../components/User/CategoriesAndWinner';
 import HomeGames from '../../components/User/HomeGames';
+import HomePageGames from '../../components/User/HomePageGames';
 
 export default function Home() {
   return (
     <div className='text-black homeBody'>
       <Hero/>
       <HomeFooter/>
-      <CategoriesAndWinner/>
+      {/* Remove the wrapper div if want to set sticky top 0 for categories and winner */}
+      <div style={{position:'sticky'}}>
+        <CategoriesAndWinner/>
+      </div>
+      <HomePageGames/>
     </div>
   )
 }

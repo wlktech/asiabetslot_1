@@ -35,8 +35,7 @@ marquee{
 }
 .homeBody{
     background-image: url('../../img/bg.png');
-    position: relative;
-    height: 2000px;
+    padding-bottom: 200px;
 }
 .bannerImg{
     height: 185px ;
@@ -211,7 +210,7 @@ marquee{
 .gameTabData{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 2px;
+    grid-column-gap: 25px;
     grid-row-gap: 5px;
     }
 .gameTabImg{
@@ -220,8 +219,43 @@ marquee{
     margin: 5px;
     max-height: 155px;
 }
+.gameTitle{
+    color: #FFD500 ;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.gameTitleBar{
+    height: 2px;
+    width: 60%;
+    background: #FFD500;
+}
 
-@media screen and (max-width:1030px) {
+.gamesGrid{
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+.game img{
+    border: 2px solid black;
+    border-radius: 10px;
+    max-height: 160px;
+    cursor: pointer;
+}
+.game p{
+    color: white;
+}
+.game{
+    transition: all 0.5s ease-in-out;
+}
+.game:hover{
+    transform: translateY(-20px);
+}
+
+
+@media screen and (max-width:1029px) {
+   
     .gameTabData{
         grid-template-columns: repeat(4, 1fr);
     }
@@ -283,6 +317,15 @@ marquee{
         height: 50px;
     }
 } 
+@media screen and (max-width:740px) {
+    .gameTitle{
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-wrap: nowrap;
+        margin-right: 5px;
+    }
+}
 @media screen and (max-width:700px){
     .gameTabImg{
         max-height: 140px;
@@ -293,8 +336,11 @@ marquee{
         padding: 0 10px;
     }
 }
-@media screen and (max-width:560px) {
-   
+@media screen and (max-width:580px) {
+    .game img{
+        border-radius: 10px;
+        max-height: 130px;
+    }
    
 }
 @media screen and (max-width:540px){
@@ -335,6 +381,11 @@ marquee{
         font-size: 12px;
     }
 }
+@media screen and (max-width:485px) {
+    .game img{
+        max-height: 110px;
+    }
+}
 @media screen and (max-width:470px){
     .gameTabImg{
         max-height: 80px;
@@ -352,15 +403,31 @@ marquee{
         column-gap: 10px;
     }
 }
+@media screen and (max-width:428px) {
+    .game img{
+        max-height: 100px;
+    }
+    .gamesGrid{
+        gap: 10px;
+    }
+}
+@media screen and (max-width:400px) {
+    
+}
 @media screen and (max-width:370px){
     .homeGamesContainer{
         margin-left: 5px !important;
     }
     .gameTabImg{
-        max-height: 70px;
+        max-height: 90px;
     }
     .gameTabData{
         column-gap: 0;
+    }
+}
+@media screen and (max-width:365px) {
+    .game img{
+        max-height: 80px;
     }
 }
 @media screen and (max-width:350px){
@@ -390,5 +457,23 @@ marquee{
     }
     .tabs{
         row-gap: 4px;
+    }
+        .game img{
+            max-height: 80px;
+    }
+}
+@media screen and (max-width:326px) {
+    .game img{
+        max-height: 75px;
+    }
+}
+@media screen and (max-width:305px) {
+    .game img{
+        max-height: 70px;
+    }
+}
+@media screen and (max-width:292px) {
+    .game img{
+        max-height: 65px;
     }
 }
