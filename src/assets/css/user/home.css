@@ -35,7 +35,7 @@ marquee{
 }
 .homeBody{
     background-image: url('../../img/bg.png');
-    padding-bottom: 200px;
+    padding-bottom: 120px;
 }
 .bannerImg{
     height: 185px ;
@@ -252,7 +252,44 @@ marquee{
 .game:hover{
     transform: translateY(-20px);
 }
-
+.copyright{
+    background: rgba(13,38,34,0.7);
+    text-align: center;
+    padding: 30px 0;
+    color: grey;
+}
+.copyright p{
+    margin: 4px 0;
+}
+.platform{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 10px;
+    color: #ffffff7a;
+    text-align: center;
+    width: 80%;
+    margin: 60px auto;
+}
+.platformIcon{
+    height: 20px;
+    width: auto;
+    margin:0 4px;
+}
+.policy{
+    padding: 10px 20px;
+    background-color: #00000014;
+    border-radius: 15px;
+    width: max-content;
+    margin: 20px auto;
+}
+.owlImg {  
+   width: 100px !important;
+   height: 70px;
+    object-position: center;
+} 
+.owl-dots{
+    display: none !important;
+}
 
 @media screen and (max-width:1029px) {
    
@@ -330,10 +367,16 @@ marquee{
     .gameTabImg{
         max-height: 140px;
     }
+    .policy{
+        font-size: 13px;
+    }
 }
 @media screen and (max-width:650px) {
     .tab img{
         padding: 0 10px;
+    }
+    .platform{
+        width: 100%;
     }
 }
 @media screen and (max-width:580px) {
@@ -354,6 +397,15 @@ marquee{
     }
 }
 @media screen and (max-width:500px) {
+    .copyright p{
+        font-size: 14px;
+    }
+    .platform{
+        padding: 10px 5px;
+    }
+    .platform span{
+        font-size: 13px;
+    }
     .homeGamesContainer h1{
         font-size: 26px;
     }
@@ -412,7 +464,10 @@ marquee{
     }
 }
 @media screen and (max-width:400px) {
-    
+    .policy{
+        font-size: 12px;
+        padding: 10px;
+    }
 }
 @media screen and (max-width:370px){
     .homeGamesContainer{

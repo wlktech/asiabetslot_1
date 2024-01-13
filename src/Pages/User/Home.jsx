@@ -6,6 +6,8 @@ import Hero from '../../components/User/hero';
 import CategoriesAndWinner from '../../components/User/CategoriesAndWinner';
 import HomeGames from '../../components/User/HomeGames';
 import HomePageGames from '../../components/User/HomePageGames';
+import Footer from '../../components/User/Footer';
+import Platform from '../../components/User/Platform';
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
         <CategoriesAndWinner/>
       </div>
       <HomePageGames/>
+      <Footer/>
+      <Platform/>
     </div>
   )
 }
