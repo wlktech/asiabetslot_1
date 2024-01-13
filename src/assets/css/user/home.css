@@ -169,8 +169,62 @@ marquee{
     font-weight: 500 !important;
 }
 
+.homeGamesContainer{
+    background: #0000004d;
+    color: #F2DFB6;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 2px solid #daa156;
+}
+.homeGamesContainer h1{
+    color: #E9C791;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 900 !important ;
+}
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+    flex-wrap: wrap;
+}
+.tab{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 8px 0 0;
+}
+.tab img{
+    height: 70px;
+    width: auto;
+}
+.tab span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.activeGameTab{
+    border-radius: 15px;
+    border: 1px solid #daa156;
+    border-bottom:4px solid #daa156 ;
+}
+.gameTabData{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+    }
+.gameTabImg{
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 5px;
+    max-height: 155px;
+}
+
 @media screen and (max-width:1030px) {
-  
+    .gameTabData{
+        grid-template-columns: repeat(4, 1fr);
+    }
     .categoriesAndWinner{
         position: sticky !important;
         top: 0 !important;
@@ -179,15 +233,17 @@ marquee{
         display: flex;
         flex-wrap: nowrap;
         justify-content: flex-start !important;
+        align-items: flex-start !important;
     }
     .categories{
+        margin-top: 20px !important;
         flex-direction: column !important;
     }
     .winnerContainer{
         position: sticky !important;
         top:0 !important;
         left: 10% !important;
-        margin: -20px 20px 0 0 !important;
+        margin: 20px 20px 0 0 !important;
     }
     .category{
         padding:10px 15px;
@@ -195,11 +251,24 @@ marquee{
     .category p{
         font-size: 14px;
     }
+    .homeGamesContainer{
+        margin-left:140px !important;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width:1000px) {
     .logo{
         height: 80px !important;
+    }
+    .homeGamesContainer{
+        margin-left: 20px !important;
+    }
+    .tabs {
+        column-gap: 40px ;
+    }
+    .tab img{
+        height: 50px;
     }
    
    
@@ -214,9 +283,37 @@ marquee{
         height: 50px;
     }
 } 
-
+@media screen and (max-width:700px){
+    .gameTabImg{
+        max-height: 140px;
+    }
+}
+@media screen and (max-width:650px) {
+    .tab img{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width:560px) {
+   
+   
+}
+@media screen and (max-width:540px){
+    .gameTabImg{
+        max-height: 110px;
+    }
+}
+@media screen and (max-width:530px){
+    .tab img{
+      height: 40px;
+    }
+}
 @media screen and (max-width:500px) {
-    
+    .homeGamesContainer h1{
+        font-size: 26px;
+    }
+    .tabs{
+        column-gap: 20px;
+    }
     .logo{
         height: 60px !important;
     }
@@ -238,7 +335,12 @@ marquee{
         font-size: 12px;
     }
 }
-
+@media screen and (max-width:470px){
+    .gameTabImg{
+        max-height: 80px;
+        border-radius: 15px;
+    }
+}
 @media screen and (max-width:440px){
     .winnerText{
         column-gap: 20px ;
@@ -246,9 +348,26 @@ marquee{
     .categoriesAndWinner{
         margin-left: 5px !important;
     }
+    .tabs{
+        column-gap: 10px;
+    }
 }
-
+@media screen and (max-width:370px){
+    .homeGamesContainer{
+        margin-left: 5px !important;
+    }
+    .gameTabImg{
+        max-height: 70px;
+    }
+    .gameTabData{
+        column-gap: 0;
+    }
+}
 @media screen and (max-width:350px){
+    .tabs{
+        column-gap: 0;
+    }
+    
     .winner{
         padding: 5px;
         column-gap: 4px;
@@ -258,5 +377,18 @@ marquee{
     }
     .winnerText p{
        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width:340px){
+    .homeGamesContainer{
+        text-align: left;
+        padding: 0 8px;
+    }
+    .tab img {
+        height: 35px;
+    }
+    .tabs{
+        row-gap: 4px;
     }
 }

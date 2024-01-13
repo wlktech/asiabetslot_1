@@ -4,6 +4,7 @@ import '../../assets/css/user/home.css';
 import HomeFooter from '../../components/User/HomeFooter';
 import Hero from '../../components/User/hero';
 import CategoriesAndWinner from '../../components/User/CategoriesAndWinner';
+import HomeGames from '../../components/User/HomeGames';
 
 export default function Home() {
   return (
