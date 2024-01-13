@@ -7,14 +7,14 @@ const HomeFooter = () => {
         {icon:<i className="fa-solid fa-bars"></i>,title:"Menu"}
     ]
   return (
-    <footer className='homeFooter d-flex d-lg-none justify-content-between align-items-center'>
+    <div className='homeFooter d-flex d-lg-none justify-content-between align-items-center'>
       {footer.map((item)=>{
         return <div  key={item.title} className='footerItem'>
             {item.icon}
             <p>{item.title}</p>
         </div>
       })}
-    </footer>
+    </div>
   )
 }
 
