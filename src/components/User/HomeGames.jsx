@@ -45,7 +45,7 @@ const casinos=[casinog1,casinog2,casinog3,casinog4,casinog5,casinog6,casinog7,ca
 const fishs=[fishg1,fishg2,fishg3,fishg4,fishg5,fishg6];
 const sports=[sportg1,sportg2,sportg3];
 
-const HomeGames = () => {
+const HomeHeroGames = () => {
     const [activeGameTab,setActiveGameTab]=useState('Hot');
     const [activeGameData,setActiveGameData]=useState(hots);
     const handleGameTab=(title)=>{
@@ -92,4 +92,4 @@ const HomeGames = () => {
   )
 }
 
-export default HomeGames
+export default HomeHeroGames

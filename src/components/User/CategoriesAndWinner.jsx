@@ -1,15 +1,15 @@
 import React from 'react'
 import Categories from './Categories'
 import Winner from './Winner'
-import HomeGames from './HomeGames'
+import HomeHeroGames from './HomeGames'
 
 const CategoriesAndWinner = () => {
   return (
     <div className='categoriesAndWinner'>
       <Categories/>
-     <div style={{overflowY:'scroll',overflowX:'hidden'}} className='mb-20 mb-sm-10'>
+     <div style={{overflowY:'scroll',overflowX:'hidden'}} >
      <Winner/>
-      <HomeGames/>
+      <HomeHeroGames/>
      </div>
 
     </div>
