@@ -34,7 +34,9 @@ marquee{
     font-size: 14px;
 }
 .homeBody{
-    background-image: url('../../img/bg.png');
+    /* background-image: url('../../img/bg.png'); */
+    background: rgb(17,58,57);
+background: linear-gradient(162deg, rgba(17,58,57,1) 0%, rgba(92,141,127,1) 100%);
     padding-bottom: 120px;
 }
 .bannerImg{
@@ -275,7 +277,7 @@ marquee{
     width: auto;
     margin:0 4px;
 }
-.policy{
+.policy {
     padding: 10px 20px;
     background-color: #00000014;
     border-radius: 15px;
@@ -367,7 +369,7 @@ marquee{
     .gameTabImg{
         max-height: 140px;
     }
-    .policy{
+    .policy p{
         font-size: 13px;
     }
 }
@@ -464,9 +466,10 @@ marquee{
     }
 }
 @media screen and (max-width:400px) {
-    .policy{
-        font-size: 12px;
-        padding: 10px;
+    .policy p{
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
     }
 }
 @media screen and (max-width:370px){

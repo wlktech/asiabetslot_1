@@ -63,7 +63,8 @@ const Platform = () => {
             </>
         })}
         <div className='policy'>
-            Responsible Gaming Policy. 21+ Responsible Gaming 
+            <p>Responsible Gaming Policy.</p>
+            <p> 21+ Responsible Gaming </p>
         </div>
         </div>
     </div>
