@@ -1,56 +1,56 @@
 import React from 'react'
-import GameTitle from './GameTitle'
-import fishg1 from '../../assets/img/games/fish1.png'
-import fishg2 from '../../assets/img/games/fish2.png'
-import fishg3 from '../../assets/img/games/fish3.png'
-import fishg4 from '../../assets/img/games/fish4.png'
-import fishg5 from '../../assets/img/games/fish5.png'
-import fishg6 from '../../assets/img/games/fish6.png'
-import fishg7 from '../../assets/img/games/fish7.png'
-import fishg8 from '../../assets/img/games/fish8.png'
-import fishg9 from '../../assets/img/games/fish9.png'
-import fishg10 from '../../assets/img/games/fish10.png'
-import slotg1 from '../../assets/img/games/slot1.png' 
-import slotg2 from '../../assets/img/games/slot2.png' 
-import slotg3 from '../../assets/img/games/slot3.png' 
-import slotg4 from '../../assets/img/games/slot4.png' 
-import slotg5 from '../../assets/img/games/slot5.png' 
-import slotg6 from '../../assets/img/games/slot6.png' 
-import slotg7 from '../../assets/img/games/slot7.png' 
-import slotg8 from '../../assets/img/games/slot8.png' 
-import slotg9 from '../../assets/img/games/slot9.png' 
-import slotg10 from '../../assets/img/games/slot10.png' 
-import tableg1 from '../../assets/img/games/table1.png'
-import tableg2 from '../../assets/img/games/table2.png'
-import tableg4 from '../../assets/img/games/table4.png'
-import tableg5 from '../../assets/img/games/table5.png'
-import tableg6 from '../../assets/img/games/table6.png'
-import tableg7 from '../../assets/img/games/table7.png'
-import tableg8 from '../../assets/img/games/table8.png'
-import tableg9 from '../../assets/img/games/table9.png'
-import tableg10 from '../../assets/img/games/table10.png'
-import tableg11 from '../../assets/img/games/table11.png'
-import tableg12 from '../../assets/img/games/table12.png'
-import casinog1 from '../../assets/img/games/casino1.png'
-import casinog2 from '../../assets/img/games/casino2.png'
-import casinog3 from '../../assets/img/games/casino3.png'
-import casinog4 from '../../assets/img/games/casino4.png'
-import casinog5 from '../../assets/img/games/casino5.png'
-import casinog6 from '../../assets/img/games/casino6.png'
-import newg1 from '../../assets/img/games/new1.png'
-import newg2 from '../../assets/img/games/new2.png'
-import newg3 from '../../assets/img/games/new3.png'
-import newg4 from '../../assets/img/games/new4.png'
-import newg5 from '../../assets/img/games/new5.png'
-import newg6 from '../../assets/img/games/new6.png'
-import newg8 from '../../assets/img/games/new8.png'
-import arcadeg1 from '../../assets/img/games/arcade1.png'
-import arcadeg2 from '../../assets/img/games/arcade2.png'
-import arcadeg3 from '../../assets/img/games/arcade3.png'
-import arcadeg4 from '../../assets/img/games/arcade4.png'
-import arcadeg5 from '../../assets/img/games/arcade5.png'
-import arcadeg6 from '../../assets/img/games/arcade6.png'
-import arcadeg8 from '../../assets/img/games/arcade8.png'
+import fishg1 from '../../../assets/img/games/fish1.png'
+import fishg2 from '../../../assets/img/games/fish2.png'
+import fishg3 from '../../../assets/img/games/fish3.png'
+import fishg4 from '../../../assets/img/games/fish4.png'
+import fishg5 from '../../../assets/img/games/fish5.png'
+import fishg6 from '../../../assets/img/games/fish6.png'
+import fishg7 from '../../../assets/img/games/fish7.png'
+import fishg8 from '../../../assets/img/games/fish8.png'
+import fishg9 from '../../../assets/img/games/fish9.png'
+import fishg10 from '../../../assets/img/games/fish10.png'
+import slotg1 from '../../../assets/img/games/slot1.png' 
+import slotg2 from '../../../assets/img/games/slot2.png' 
+import slotg3 from '../../../assets/img/games/slot3.png' 
+import slotg4 from '../../../assets/img/games/slot4.png' 
+import slotg5 from '../../../assets/img/games/slot5.png' 
+import slotg6 from '../../../assets/img/games/slot6.png' 
+import slotg7 from '../../../assets/img/games/slot7.png' 
+import slotg8 from '../../../assets/img/games/slot8.png' 
+import slotg9 from '../../../assets/img/games/slot9.png' 
+import slotg10 from '../../../assets/img/games/slot10.png' 
+import tableg1 from '../../../assets/img/games/table1.png'
+import tableg2 from '../../../assets/img/games/table2.png'
+import tableg4 from '../../../assets/img/games/table4.png'
+import tableg5 from '../../../assets/img/games/table5.png'
+import tableg6 from '../../../assets/img/games/table6.png'
+import tableg7 from '../../../assets/img/games/table7.png'
+import tableg8 from '../../../assets/img/games/table8.png'
+import tableg9 from '../../../assets/img/games/table9.png'
+import tableg10 from '../../../assets/img/games/table10.png'
+import tableg11 from '../../../assets/img/games/table11.png'
+import tableg12 from '../../../assets/img/games/table12.png'
+import casinog1 from '../../../assets/img/games/casino1.png'
+import casinog2 from '../../../assets/img/games/casino2.png'
+import casinog3 from '../../../assets/img/games/casino3.png'
+import casinog4 from '../../../assets/img/games/casino4.png'
+import casinog5 from '../../../assets/img/games/casino5.png'
+import casinog6 from '../../../assets/img/games/casino6.png'
+import newg1 from '../../../assets/img/games/new1.png'
+import newg2 from '../../../assets/img/games/new2.png'
+import newg3 from '../../../assets/img/games/new3.png'
+import newg4 from '../../../assets/img/games/new4.png'
+import newg5 from '../../../assets/img/games/new5.png'
+import newg6 from '../../../assets/img/games/new6.png'
+import newg8 from '../../../assets/img/games/new8.png'
+import arcadeg1 from '../../../assets/img/games/arcade1.png'
+import arcadeg2 from '../../../assets/img/games/arcade2.png'
+import arcadeg3 from '../../../assets/img/games/arcade3.png'
+import arcadeg4 from '../../../assets/img/games/arcade4.png'
+import arcadeg5 from '../../../assets/img/games/arcade5.png'
+import arcadeg6 from '../../../assets/img/games/arcade6.png'
+import arcadeg8 from '../../../assets/img/games/arcade8.png'
+import GameTitle from '../GameTitle'
 
 const fishGames=[
     {img:fishg1,title:'Game'},
@@ -129,7 +129,6 @@ const HomePageGames = () => {
         {fishGames.map((game)=>{
             return <div className='game'>
                 <img src={game.img} />
-                <p>{game.title}</p>
             </div>
         })}
       </div>
@@ -138,7 +137,6 @@ const HomePageGames = () => {
         {slotGames.map((game)=>{
             return <div className='game'>
                 <img src={game.img} />
-                <p>{game.title}</p>
             </div>
         })}
       </div>
@@ -147,7 +145,6 @@ const HomePageGames = () => {
         {tableGames.map((game)=>{
             return <div className='game'>
                 <img src={game.img} />
-                <p>{game.title}</p>
             </div>
         })}
       </div>
@@ -156,7 +153,6 @@ const HomePageGames = () => {
         {liveGames.map((game)=>{
             return <div className='game'>
                 <img src={game.img} />
-                <p>{game.title}</p>
             </div>
         })}
       </div>
@@ -165,7 +161,6 @@ const HomePageGames = () => {
         {newGames.map((game)=>{
             return <div className='game'>
                 <img src={game.img} />
-                <p>{game.title}</p>
             </div>
         })}
       </div>
@@ -174,7 +169,6 @@ const HomePageGames = () => {
         {arcadeGames.map((game)=>{
             return <div className='game'>
                 <img src={game.img} />
-                <p>{game.title}</p>
             </div>
         })}
       </div>
